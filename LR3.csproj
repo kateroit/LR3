@@ -79,6 +79,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="View\Ekaterina.resx">
+          <DependentUpon>Ekaterina.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="View\MainForm.resx">
           <DependentUpon>MainForm.cs</DependentUpon>
         </EmbeddedResource>
