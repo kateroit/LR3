@@ -70,14 +70,26 @@ namespace LR3
             this.inf2011 = new System.Windows.Forms.RadioButton();
             this.inf2010 = new System.Windows.Forms.RadioButton();
             this.inf2023 = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Price = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.NewPrice = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCalc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChooseNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Price)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // table
             // 
+            this.table.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.Year, this.January, this.February, this.March, this.April, this.May, this.June, this.July, this.August, this.September, this.October, this.November, this.December });
             this.table.Location = new System.Drawing.Point(11, 13);
@@ -233,7 +245,7 @@ namespace LR3
             // 
             // ChooseNumber
             // 
-            this.ChooseNumber.Location = new System.Drawing.Point(25, 341);
+            this.ChooseNumber.Location = new System.Drawing.Point(8, 39);
             this.ChooseNumber.Maximum = new decimal(new int[] { 15, 0, 0, 0 });
             this.ChooseNumber.Minimum = new decimal(new int[] { 2, 0, 0, 0 });
             this.ChooseNumber.Name = "ChooseNumber";
@@ -243,7 +255,7 @@ namespace LR3
             // 
             // CalcBTN
             // 
-            this.CalcBTN.Location = new System.Drawing.Point(25, 369);
+            this.CalcBTN.Location = new System.Drawing.Point(9, 121);
             this.CalcBTN.Name = "CalcBTN";
             this.CalcBTN.Size = new System.Drawing.Size(199, 30);
             this.CalcBTN.TabIndex = 4;
@@ -253,7 +265,7 @@ namespace LR3
             // 
             // inf2009
             // 
-            this.inf2009.Location = new System.Drawing.Point(942, 248);
+            this.inf2009.Location = new System.Drawing.Point(214, 21);
             this.inf2009.Name = "inf2009";
             this.inf2009.Size = new System.Drawing.Size(104, 24);
             this.inf2009.TabIndex = 5;
@@ -319,7 +331,7 @@ namespace LR3
             // 
             // inf2017
             // 
-            this.inf2017.Location = new System.Drawing.Point(1052, 338);
+            this.inf2017.Location = new System.Drawing.Point(324, 111);
             this.inf2017.Name = "inf2017";
             this.inf2017.Size = new System.Drawing.Size(104, 24);
             this.inf2017.TabIndex = 11;
@@ -330,7 +342,7 @@ namespace LR3
             // 
             // inf2016
             // 
-            this.inf2016.Location = new System.Drawing.Point(1052, 308);
+            this.inf2016.Location = new System.Drawing.Point(324, 81);
             this.inf2016.Name = "inf2016";
             this.inf2016.Size = new System.Drawing.Size(104, 24);
             this.inf2016.TabIndex = 12;
@@ -341,7 +353,7 @@ namespace LR3
             // 
             // inf2015
             // 
-            this.inf2015.Location = new System.Drawing.Point(1052, 278);
+            this.inf2015.Location = new System.Drawing.Point(324, 51);
             this.inf2015.Name = "inf2015";
             this.inf2015.Size = new System.Drawing.Size(104, 24);
             this.inf2015.TabIndex = 13;
@@ -352,7 +364,7 @@ namespace LR3
             // 
             // inf2014
             // 
-            this.inf2014.Location = new System.Drawing.Point(1052, 248);
+            this.inf2014.Location = new System.Drawing.Point(324, 21);
             this.inf2014.Name = "inf2014";
             this.inf2014.Size = new System.Drawing.Size(104, 24);
             this.inf2014.TabIndex = 14;
@@ -374,7 +386,7 @@ namespace LR3
             // 
             // inf2012
             // 
-            this.inf2012.Location = new System.Drawing.Point(942, 338);
+            this.inf2012.Location = new System.Drawing.Point(214, 111);
             this.inf2012.Name = "inf2012";
             this.inf2012.Size = new System.Drawing.Size(104, 24);
             this.inf2012.TabIndex = 16;
@@ -385,7 +397,7 @@ namespace LR3
             // 
             // inf2011
             // 
-            this.inf2011.Location = new System.Drawing.Point(942, 308);
+            this.inf2011.Location = new System.Drawing.Point(214, 81);
             this.inf2011.Name = "inf2011";
             this.inf2011.Size = new System.Drawing.Size(104, 24);
             this.inf2011.TabIndex = 17;
@@ -396,7 +408,7 @@ namespace LR3
             // 
             // inf2010
             // 
-            this.inf2010.Location = new System.Drawing.Point(942, 278);
+            this.inf2010.Location = new System.Drawing.Point(214, 51);
             this.inf2010.Name = "inf2010";
             this.inf2010.Size = new System.Drawing.Size(104, 24);
             this.inf2010.TabIndex = 18;
@@ -416,28 +428,105 @@ namespace LR3
             this.inf2023.UseVisualStyleBackColor = true;
             this.inf2023.CheckedChanged += new System.EventHandler(this.inf2023_CheckedChanged);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(7, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 23);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Введите количество лет";
+            // 
+            // Price
+            // 
+            this.Price.Location = new System.Drawing.Point(8, 93);
+            this.Price.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
+            this.Price.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(199, 22);
+            this.Price.TabIndex = 21;
+            this.Price.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(7, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 23);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Введите стоимость товара";
+            // 
+            // NewPrice
+            // 
+            this.NewPrice.Location = new System.Drawing.Point(522, 125);
+            this.NewPrice.Name = "NewPrice";
+            this.NewPrice.Size = new System.Drawing.Size(198, 22);
+            this.NewPrice.TabIndex = 23;
+            this.NewPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(522, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 36);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Рассчитанная стоимость товара";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.NewPrice);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.Price);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.CalcBTN);
+            this.groupBox1.Controls.Add(this.ChooseNumber);
+            this.groupBox1.Location = new System.Drawing.Point(25, 228);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(756, 164);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.inf2010);
+            this.groupBox2.Controls.Add(this.inf2011);
+            this.groupBox2.Controls.Add(this.inf2012);
+            this.groupBox2.Controls.Add(this.inf2014);
+            this.groupBox2.Controls.Add(this.inf2015);
+            this.groupBox2.Controls.Add(this.inf2016);
+            this.groupBox2.Controls.Add(this.inf2017);
+            this.groupBox2.Controls.Add(this.inf2009);
+            this.groupBox2.Location = new System.Drawing.Point(850, 228);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(756, 164);
+            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(67, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 23);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Выберите год";
+            // 
             // Ekaterina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1930, 828);
+            this.ClientSize = new System.Drawing.Size(1695, 828);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.inf2023);
-            this.Controls.Add(this.inf2010);
-            this.Controls.Add(this.inf2011);
-            this.Controls.Add(this.inf2012);
             this.Controls.Add(this.inf2013);
-            this.Controls.Add(this.inf2014);
-            this.Controls.Add(this.inf2015);
-            this.Controls.Add(this.inf2016);
-            this.Controls.Add(this.inf2017);
             this.Controls.Add(this.inf2018);
             this.Controls.Add(this.inf2019);
             this.Controls.Add(this.inf2020);
             this.Controls.Add(this.ing2021);
             this.Controls.Add(this.inf2022);
-            this.Controls.Add(this.inf2009);
-            this.Controls.Add(this.CalcBTN);
-            this.Controls.Add(this.ChooseNumber);
             this.Controls.Add(this.chartCalc);
             this.Controls.Add(this.chartYear);
             this.Controls.Add(this.table);
@@ -447,8 +536,26 @@ namespace LR3
             ((System.ComponentModel.ISupportInitialize)(this.chartYear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCalc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChooseNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Price)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label4;
+
+        private System.Windows.Forms.GroupBox groupBox2;
+
+        private System.Windows.Forms.GroupBox groupBox1;
+
+        private System.Windows.Forms.TextBox NewPrice;
+        private System.Windows.Forms.Label label3;
+
+        private System.Windows.Forms.NumericUpDown Price;
+        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.RadioButton inf2019;
 
