@@ -1,5 +1,8 @@
+using System;
 using System.Windows.Forms;
 using LR3.Presenter;
+using System.Windows.Forms.DataVisualization.Charting;
+using static System.Windows.Forms.DataVisualization.Charting.SeriesChartType;
 
 namespace LR3
 {
@@ -11,6 +14,7 @@ namespace LR3
             InitializeComponent();
             presenter = new MainPresenter(this);
             GetValues();
+            Chart();
         }
         private void GetValues()
         {
@@ -35,6 +39,19 @@ namespace LR3
                 table.Rows[i].Cells[10].Value = inflationList[i].October;
                 table.Rows[i].Cells[11].Value = inflationList[i].November;
                 table.Rows[i].Cells[12].Value = inflationList[i].December;
+            }
+        }
+
+        private void Chart()
+        {
+            var inflationList = presenter.GetInflations();
+            this.chartYear.Series[0].Points.Clear();
+            int mounth = 1;
+            for (int i = 0; i < 12; i++)
+            {
+                double inflation = inflationList[i].December;
+                this.chartYear.Series[0].Points.AddXY(mounth, inflation);
+                mounth++;
             }
         }
     }
