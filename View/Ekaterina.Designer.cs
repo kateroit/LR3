@@ -276,7 +276,7 @@ namespace LR3
             // 
             // inf2022
             // 
-            this.inf2022.Location = new System.Drawing.Point(1162, 338);
+            this.inf2022.Location = new System.Drawing.Point(418, 88);
             this.inf2022.Name = "inf2022";
             this.inf2022.Size = new System.Drawing.Size(104, 24);
             this.inf2022.TabIndex = 6;
@@ -287,7 +287,7 @@ namespace LR3
             // 
             // ing2021
             // 
-            this.ing2021.Location = new System.Drawing.Point(1162, 308);
+            this.ing2021.Location = new System.Drawing.Point(418, 67);
             this.ing2021.Name = "ing2021";
             this.ing2021.Size = new System.Drawing.Size(104, 24);
             this.ing2021.TabIndex = 7;
@@ -298,7 +298,7 @@ namespace LR3
             // 
             // inf2020
             // 
-            this.inf2020.Location = new System.Drawing.Point(1162, 278);
+            this.inf2020.Location = new System.Drawing.Point(418, 43);
             this.inf2020.Name = "inf2020";
             this.inf2020.Size = new System.Drawing.Size(104, 24);
             this.inf2020.TabIndex = 8;
@@ -309,7 +309,7 @@ namespace LR3
             // 
             // inf2019
             // 
-            this.inf2019.Location = new System.Drawing.Point(1162, 248);
+            this.inf2019.Location = new System.Drawing.Point(418, 21);
             this.inf2019.Name = "inf2019";
             this.inf2019.Size = new System.Drawing.Size(104, 24);
             this.inf2019.TabIndex = 9;
@@ -320,7 +320,7 @@ namespace LR3
             // 
             // inf2018
             // 
-            this.inf2018.Location = new System.Drawing.Point(1052, 368);
+            this.inf2018.Location = new System.Drawing.Point(324, 110);
             this.inf2018.Name = "inf2018";
             this.inf2018.Size = new System.Drawing.Size(104, 24);
             this.inf2018.TabIndex = 10;
@@ -331,7 +331,7 @@ namespace LR3
             // 
             // inf2017
             // 
-            this.inf2017.Location = new System.Drawing.Point(324, 111);
+            this.inf2017.Location = new System.Drawing.Point(324, 88);
             this.inf2017.Name = "inf2017";
             this.inf2017.Size = new System.Drawing.Size(104, 24);
             this.inf2017.TabIndex = 11;
@@ -342,7 +342,7 @@ namespace LR3
             // 
             // inf2016
             // 
-            this.inf2016.Location = new System.Drawing.Point(324, 81);
+            this.inf2016.Location = new System.Drawing.Point(324, 67);
             this.inf2016.Name = "inf2016";
             this.inf2016.Size = new System.Drawing.Size(104, 24);
             this.inf2016.TabIndex = 12;
@@ -353,7 +353,7 @@ namespace LR3
             // 
             // inf2015
             // 
-            this.inf2015.Location = new System.Drawing.Point(324, 51);
+            this.inf2015.Location = new System.Drawing.Point(324, 43);
             this.inf2015.Name = "inf2015";
             this.inf2015.Size = new System.Drawing.Size(104, 24);
             this.inf2015.TabIndex = 13;
@@ -375,7 +375,7 @@ namespace LR3
             // 
             // inf2013
             // 
-            this.inf2013.Location = new System.Drawing.Point(942, 368);
+            this.inf2013.Location = new System.Drawing.Point(214, 110);
             this.inf2013.Name = "inf2013";
             this.inf2013.Size = new System.Drawing.Size(104, 24);
             this.inf2013.TabIndex = 15;
@@ -386,7 +386,7 @@ namespace LR3
             // 
             // inf2012
             // 
-            this.inf2012.Location = new System.Drawing.Point(214, 111);
+            this.inf2012.Location = new System.Drawing.Point(214, 88);
             this.inf2012.Name = "inf2012";
             this.inf2012.Size = new System.Drawing.Size(104, 24);
             this.inf2012.TabIndex = 16;
@@ -397,7 +397,7 @@ namespace LR3
             // 
             // inf2011
             // 
-            this.inf2011.Location = new System.Drawing.Point(214, 81);
+            this.inf2011.Location = new System.Drawing.Point(214, 67);
             this.inf2011.Name = "inf2011";
             this.inf2011.Size = new System.Drawing.Size(104, 24);
             this.inf2011.TabIndex = 17;
@@ -408,7 +408,7 @@ namespace LR3
             // 
             // inf2010
             // 
-            this.inf2010.Location = new System.Drawing.Point(214, 51);
+            this.inf2010.Location = new System.Drawing.Point(214, 43);
             this.inf2010.Name = "inf2010";
             this.inf2010.Size = new System.Drawing.Size(104, 24);
             this.inf2010.TabIndex = 18;
@@ -419,7 +419,7 @@ namespace LR3
             // 
             // inf2023
             // 
-            this.inf2023.Location = new System.Drawing.Point(1162, 368);
+            this.inf2023.Location = new System.Drawing.Point(418, 110);
             this.inf2023.Name = "inf2023";
             this.inf2023.Size = new System.Drawing.Size(104, 24);
             this.inf2023.TabIndex = 19;
@@ -456,7 +456,7 @@ namespace LR3
             // 
             // NewPrice
             // 
-            this.NewPrice.Location = new System.Drawing.Point(522, 125);
+            this.NewPrice.Location = new System.Drawing.Point(399, 90);
             this.NewPrice.Name = "NewPrice";
             this.NewPrice.Size = new System.Drawing.Size(198, 22);
             this.NewPrice.TabIndex = 23;
@@ -464,7 +464,7 @@ namespace LR3
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(522, 85);
+            this.label3.Location = new System.Drawing.Point(399, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(198, 36);
             this.label3.TabIndex = 24;
@@ -492,7 +492,14 @@ namespace LR3
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.inf2010);
+            this.groupBox2.Controls.Add(this.inf2023);
             this.groupBox2.Controls.Add(this.inf2011);
+            this.groupBox2.Controls.Add(this.inf2022);
+            this.groupBox2.Controls.Add(this.ing2021);
+            this.groupBox2.Controls.Add(this.inf2020);
+            this.groupBox2.Controls.Add(this.inf2019);
+            this.groupBox2.Controls.Add(this.inf2018);
+            this.groupBox2.Controls.Add(this.inf2013);
             this.groupBox2.Controls.Add(this.inf2012);
             this.groupBox2.Controls.Add(this.inf2014);
             this.groupBox2.Controls.Add(this.inf2015);
@@ -520,13 +527,6 @@ namespace LR3
             this.ClientSize = new System.Drawing.Size(1695, 828);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.inf2023);
-            this.Controls.Add(this.inf2013);
-            this.Controls.Add(this.inf2018);
-            this.Controls.Add(this.inf2019);
-            this.Controls.Add(this.inf2020);
-            this.Controls.Add(this.ing2021);
-            this.Controls.Add(this.inf2022);
             this.Controls.Add(this.chartCalc);
             this.Controls.Add(this.chartYear);
             this.Controls.Add(this.table);
