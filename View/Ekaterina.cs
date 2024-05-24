@@ -462,6 +462,5 @@ namespace LR3
                 mounth++;
             }
         }
-
     }
 }
