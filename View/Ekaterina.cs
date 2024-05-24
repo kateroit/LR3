@@ -18,11 +18,8 @@ namespace LR3
             
             presenter = new MainPresenter(this);
             GetValues();
-            //Chart();
-            
-            
         }
-
+        // Заполнение таблицы
         private void GetValues()
         {
             var inflationList = presenter.GetInflations();
@@ -32,7 +29,6 @@ namespace LR3
                 {
                     table.Rows.Add();
                 }
-
                 table.Rows[i].Cells[0].Value = inflationList[i].Year;
                 table.Rows[i].Cells[1].Value = inflationList[i].January;
                 table.Rows[i].Cells[2].Value = inflationList[i].February;
@@ -48,20 +44,8 @@ namespace LR3
                 table.Rows[i].Cells[12].Value = inflationList[i].December;
             }
         }
-
-        private void Chart()
-        {
-            var inflationList = presenter.GetInflations();
-            this.chartYear.Series[0].Points.Clear();
-            int mounth = 1;
-            for (int i = 0; i < 12; i++)
-            {
-                double inflation = inflationList[i].December;
-                this.chartYear.Series[0].Points.AddXY(mounth, inflation);
-                mounth++;
-            }
-        }
-
+        
+        // Вычисление экстраполяции
         private void CalcBTN_Click(object sender, EventArgs e)
         {
             var inflationList = presenter.GetInflations();
@@ -82,6 +66,12 @@ namespace LR3
                 double avg = k / (double)ChooseNumber.Value;
                 inf.Add(avg);
             }
+
+            for (int i = 0; i < inf.Count; i++)
+            {
+                Console.Write(inf[i] + " ");
+            }
+            
             
             this.chartCalc.Series[0].Points.Clear();
             int mounth = 1;
@@ -90,9 +80,14 @@ namespace LR3
                 this.chartCalc.Series[0].Points.AddXY(mounth, inf[i]);
                 mounth++;
             }
+
+            double price = (double)Price.Value;
+            double _ = price * Math.Pow((1 + ((inf[inf.Count - 1]) / 100)), (double)ChooseNumber.Value);
+            int newPrice = (int)_;
+            NewPrice.Text = newPrice.ToString();
             inf.Clear();
         }
-
+        // Графики по годам
         private void inf2009_CheckedChanged(object sender, EventArgs e)
         {
             var inflationList = presenter.GetInflations();
@@ -467,5 +462,6 @@ namespace LR3
                 mounth++;
             }
         }
+
     }
 }
