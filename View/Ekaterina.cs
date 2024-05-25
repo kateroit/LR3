@@ -66,13 +66,6 @@ namespace LR3
                 double avg = k / (double)ChooseNumber.Value;
                 inf.Add(avg);
             }
-
-            for (int i = 0; i < inf.Count; i++)
-            {
-                Console.Write(inf[i] + " ");
-            }
-            
-            
             this.chartCalc.Series[0].Points.Clear();
             int mounth = 1;
             for (int i = 0; i < 15 + ChooseNumber.Value; i++)
