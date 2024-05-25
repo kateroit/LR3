@@ -33,5 +33,109 @@ namespace LR3
                 table.Rows[i].Cells[1].Value = prices[i].Price;
             }
         }
+
+        private void CalcBTN_Click(object sender, EventArgs e)
+        {
+            var prices = presenter.GetPrices();
+            List<double> pri = new List<double>();
+            
+            for (int i = 0; i < 15; i++)
+            {
+                pri.Add(prices[i].Price);
+            }
+            
+            for (int i = (int)ChooseNumber.Value; i > 0; i--)
+            {
+                double k = 0;
+                for (int j = (int)ChooseNumber.Value; j > 0; j--)
+                {
+                    k += pri[pri.Count - j];
+                }
+                double avg = k / (double)ChooseNumber.Value;
+                pri.Add(avg);
+            }
+            this.chartCalc.Series[0].Points.Clear();
+            int mounth = 1;
+            for (int i = 0; i < 15 + ChooseNumber.Value; i++)
+            {
+                this.chartCalc.Series[0].Points.AddXY(mounth, pri[i]);
+                mounth++;
+            }
+            pri.Clear();
+        }
+        private void inf2009_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2010_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2011_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2012_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2013_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2014_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2015_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2016_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2017_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2018_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2019_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2020_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ing2021_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2022_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inf2023_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
