@@ -54,21 +54,21 @@ namespace LR3.Model
 
         public List<Inflation> GetInflations()
         {
-            inflationList.Add(i2023);
-            inflationList.Add(i2022);
-            inflationList.Add(i2021);
-            inflationList.Add(i2020);
-            inflationList.Add(i2019);
-            inflationList.Add(i2018);
-            inflationList.Add(i2017);
-            inflationList.Add(i2016);
-            inflationList.Add(i2015);
-            inflationList.Add(i2014);
-            inflationList.Add(i2013);
-            inflationList.Add(i2012);
-            inflationList.Add(i2011);
-            inflationList.Add(i2010);
             inflationList.Add(i2009);
+            inflationList.Add(i2010);
+            inflationList.Add(i2011);
+            inflationList.Add(i2012);
+            inflationList.Add(i2013);
+            inflationList.Add(i2014);
+            inflationList.Add(i2015);
+            inflationList.Add(i2016);
+            inflationList.Add(i2017);
+            inflationList.Add(i2018);
+            inflationList.Add(i2019);
+            inflationList.Add(i2020);
+            inflationList.Add(i2021);
+            inflationList.Add(i2022);
+            inflationList.Add(i2023);
             return inflationList;
         }
     }

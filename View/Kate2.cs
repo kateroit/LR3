@@ -17,8 +17,20 @@ namespace LR3
             InitializeComponent();
             presenter = new MainPresenter(this);
             GetValues();
+            Chart();
         }
-        
+        // Построение графика изменения цен по годам
+        private void Chart()
+        {
+            var prices = presenter.GetPrices();
+            this.chartYear.Series[0].Points.Clear();
+            int mounth = 1;
+            for (int i = 0; i < 15; i++)
+            {
+                this.chartYear.Series[0].Points.AddXY(mounth, prices[i].Price);
+                mounth++;
+            }
+        }
         // Заполнение таблицы
         private void GetValues()
         {
@@ -63,79 +75,55 @@ namespace LR3
             }
             pri.Clear();
         }
-        private void inf2009_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void inf2010_CheckedChanged(object sender, EventArgs e)
+        private void CalcRooms_Click(object sender, EventArgs e)
         {
+            var prices = presenter.GetPrices();
+            List<int> pri = new List<int>();
+            switch ((int)ChooseRooms.Value)
+            {
+                case 1:
+                    for (int i = 0; i < 15; i++)
+                    {
+                        pri.Add(prices[i].Price * 30);
+                    }
+                    break;
+                case 2:
+                    for (int i = 0; i < 15; i++)
+                    {
+                        pri.Add(prices[i].Price * 60);
+                    }
+                    break;
+                case 3:
+                    for (int i = 0; i < 15; i++)
+                    {
+                        pri.Add(prices[i].Price * 90);
+                    }
+                    break;
+                case 4:
+                    for (int i = 0; i < 15; i++)
+                    {
+                        pri.Add(prices[i].Price * 120);
+                    }
+                    break;
+                case 5:
+                    for (int i = 0; i < 15; i++)
+                    {
+                        pri.Add(prices[i].Price * 150);
+                    }
+                    break;
+            }
             
-        }
-
-        private void inf2011_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2012_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2013_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2014_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2015_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2016_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2017_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2018_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2019_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2020_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ing2021_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2022_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void inf2023_CheckedChanged(object sender, EventArgs e)
-        {
-            
+            for (int i = 0; i < 15; i++)
+            {
+                pri.Add((int)ChooseRooms.Value * prices[i].Price);
+            }
+            PriceRooms.Text = "Стоимость " + ChooseNumber.Value + "-ой квартиры составляет:\n";
+            for (int i = 0; i < 15; i++)
+            {
+                PriceRooms.Text += "В " + prices[i].Year + " году - " + pri[i] + " рублей\n";
+            }
+            pri.Clear();
         }
     }
 }
