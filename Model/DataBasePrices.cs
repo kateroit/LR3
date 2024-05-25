@@ -24,21 +24,21 @@ namespace LR3.Model
 
         public List<Prices> GetPrices()
         {
-            prices.Add(i2023);
-            prices.Add(i2022);
-            prices.Add(i2021);
-            prices.Add(i2020);
-            prices.Add(i2019);
-            prices.Add(i2018);
-            prices.Add(i2017);
-            prices.Add(i2016);
-            prices.Add(i2015);
-            prices.Add(i2014);
-            prices.Add(i2013);
-            prices.Add(i2012);
-            prices.Add(i2011);
-            prices.Add(i2010);
             prices.Add(i2009);
+            prices.Add(i2010);
+            prices.Add(i2011);
+            prices.Add(i2012);
+            prices.Add(i2013);
+            prices.Add(i2014);
+            prices.Add(i2015);
+            prices.Add(i2016);
+            prices.Add(i2017);
+            prices.Add(i2018);
+            prices.Add(i2019);
+            prices.Add(i2020);
+            prices.Add(i2021);
+            prices.Add(i2022);
+            prices.Add(i2023);
             return prices;
         }
     }
