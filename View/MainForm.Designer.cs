@@ -49,7 +49,7 @@
             this.Daria.Name = "Daria";
             this.Daria.Size = new System.Drawing.Size(148, 36);
             this.Daria.TabIndex = 1;
-            this.Daria.Text = "Нечаева";
+            this.Daria.Text = "Троицкая2";
             this.Daria.UseVisualStyleBackColor = true;
             this.Daria.Click += new System.EventHandler(this.Daria_Click);
             // 
