@@ -48,21 +48,23 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Model\DataBaseInflation.cs" />
+        <Compile Include="Model\DataBasePrices.cs" />
         <Compile Include="Model\Inflation.cs" />
+        <Compile Include="Model\Prices.cs" />
         <Compile Include="Presenter\MainPresenter.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="View\Daria.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="View\Daria.Designer.cs">
-          <DependentUpon>Daria.cs</DependentUpon>
-        </Compile>
         <Compile Include="View\Ekaterina.cs">
           <SubType>Form</SubType>
         </Compile>
         <Compile Include="View\Ekaterina.Designer.cs">
           <DependentUpon>Ekaterina.cs</DependentUpon>
+        </Compile>
+        <Compile Include="View\Kate2.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="View\Kate2.Designer.cs">
+          <DependentUpon>Kate2.cs</DependentUpon>
         </Compile>
         <Compile Include="View\MainForm.cs">
           <SubType>Form</SubType>
@@ -82,6 +84,9 @@
         </Compile>
         <EmbeddedResource Include="View\Ekaterina.resx">
           <DependentUpon>Ekaterina.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="View\Kate2.resx">
+          <DependentUpon>Kate2.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="View\MainForm.resx">
           <DependentUpon>MainForm.cs</DependentUpon>

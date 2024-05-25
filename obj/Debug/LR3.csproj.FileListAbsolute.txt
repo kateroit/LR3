@@ -9,3 +9,15 @@ C:\Users\Катя\RiderProjects\LR3\obj\Debug\LR3.exe
 C:\Users\Катя\RiderProjects\LR3\obj\Debug\LR3.pdb
 C:\Users\Катя\RiderProjects\LR3\obj\Debug\LR3.Ekaterina.resources
 C:\Users\Катя\RiderProjects\LR3\obj\Debug\LR3.MainForm.resources
+C:\Users\Катя\RiderProjects\LR3.2\bin\Debug\LR3.exe.config
+C:\Users\Катя\RiderProjects\LR3.2\bin\Debug\LR3.exe
+C:\Users\Катя\RiderProjects\LR3.2\bin\Debug\LR3.pdb
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.csproj.AssemblyReference.cache
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.Properties.Resources.resources
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.Ekaterina1.resources
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.Kate2.resources
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.MainForm.resources
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.csproj.GenerateResource.cache
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.csproj.CoreCompileInputs.cache
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.exe
+C:\Users\Катя\RiderProjects\LR3.2\obj\Debug\LR3.pdb

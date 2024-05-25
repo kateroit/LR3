@@ -25,8 +25,8 @@ namespace LR3
 
         private void Daria_Click(object sender, EventArgs e)
         {
-            Daria dasha = new Daria();
-            dasha.Show();
+            Kate2 kate2 = new Kate2();
+            kate2.Show();
         }
     }
     
